@@ -27,18 +27,18 @@
 }
 
 #infoPicsGroup{
-    
+
 }
 
 #recentOffers{
-    background-color: grey;
+    background-color:rgb(184, 193, 193);
     padding-left: 0px;
 }
 
-.specialOffers{
+.specialOffersMessage{
 color: green;
 }
 
-#specialOffersId{
+#specialOffersMessageId{
     text-align: center;
 }
