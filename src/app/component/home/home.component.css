@@ -1,0 +1,44 @@
+.mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.infoPics{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+#infoPicsGroup{
+    display: flex;
+    flex-direction: column;
+}
+
+#affiliationMessage{
+    padding-left: 600px;
+    display: flex;
+    flex-direction: row;
+    color: blue;
+}
+
+#learnMore{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+#infoPicsGroup{
+    
+}
+
+#recentOffers{
+    background-color: grey;
+    padding-left: 0px;
+}
+
+.specialOffers{
+color: green;
+}
+
+#specialOffersId{
+    text-align: center;
+}
