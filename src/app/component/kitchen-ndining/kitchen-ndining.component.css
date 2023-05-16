@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.box {
+    background-color: #ccc;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none; /* remove underline */
+    color: black; /* keep text black */
+}
+@media(max-width: 768px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin: 20px;
+    }
+}
+@media(max-width: 768px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin: 20px;
+    }
+}

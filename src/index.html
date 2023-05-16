@@ -5,33 +5,48 @@
   <title>StoreDisplay</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="assets/logo1.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
    
 </head>
 <body>
   <header>
+    
 		<nav>
-      <img src="https://media1.thehungryjpeg.com/thumbs2/ori_3684873_xnscu1rp1u0wvjtx5samgyolzjwymmpmn94xoi8x_gw-monogram-logo-design.jpg">
-			<ul>
-				<li><a href="#">Electronics</a></li>
-				<li><a href="#">Home & Garden</a></li>
-				<li><a href="#">Kitching & Dining</a></li>
-        <li><a href="#">Clothing & accessories</a></li>
-        <li><a href="#">More categories..</a></li>
+      <a href=""><img src="https://media1.thehungryjpeg.com/thumbs2/ori_3684873_xnscu1rp1u0wvjtx5samgyolzjwymmpmn94xoi8x_gw-monogram-logo-design.jpg">
+      </a>
+			<ul class="bigscreen-menu">
+				<li><a href="components/electronics">Electronics</a></li>
+				<li><a href="components/home-ngarden">Home & Garden</a></li>
+				<li><a href="components/kitchen-ndining">Kitching & Dining</a></li>
+        <li><a href="components/clothing-naccessories">Clothing & accessories</a></li>
+        <li><a href="components/more-categories">More categories..</a></li>
 			</ul>
 			<div class="auth-buttons">
 				<button>Sign In</button>
 				<button>Sign Up</button>
 			</div>
 		</nav>
+    <div class="searchNdropdown">
 		<div class="search-container">
-			<input type="text" placeholder="Search...">
+			<input type="text" placeholder="Search..." class="search-bar">
       <a href="#"><img class ="littleImages" src="https://cdn2.iconfinder.com/data/icons/web-mobile-app-basics/100/TiNY2_BASICS_Search-512.png"></a>
-
 		</div>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="components/electronics">Electronics</a>
+        <a href="components/home-ngarden">Home & Garden</a>
+        <a href="components/kitchen-ndining">Kitching & Dining</a>
+        <a href="components/clothing-naccessories">Clothing & accessories</a>
+        <a href="components/more-categories">More categories..</a>
+    </div>
+    </div>
 	</header>
+
   <app-root></app-root>
 
 </body>
@@ -40,7 +55,7 @@
   <div class="footer-container">
     <div class="footer-links">
       <a href="">Home</a>
-      <a href="#">About Us</a>
+      <a href="components/about">About Us</a>
       <a href="#">Services</a>
       <a href="#">Contact</a>
     </div>

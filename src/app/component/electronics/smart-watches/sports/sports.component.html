@@ -1,0 +1,19 @@
+<div class="container1">
+    <div class="bar">Sports watches</div>
+</div>
+
+<div class="container">
+
+</div>
+
+
+<div class = "container" *ngIf="showMoreInfo1">
+
+</div>
+
+<div class="buttcontainer">
+
+<button class="showMoreButt" *ngIf="!showMoreInfo1" (click)="showMore1()">Show More</button>
+<button class="showMoreButt" *ngIf="showMoreInfo1" (click)="showMore1()">Show Less</button>
+</div>
+

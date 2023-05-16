@@ -15,9 +15,7 @@
 }
 
 #affiliationMessage{
-    padding-left: 600px;
-    display: flex;
-    flex-direction: row;
+    font-size: 18px;
     color: blue;
 }
 
@@ -42,3 +40,62 @@ color: green;
 #specialOffersMessageId{
     text-align: center;
 }
+
+a {
+    text-decoration: none; /* remove underline */
+    color: black; /* keep text black */
+}
+
+.hero {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+}
+
+@media(max-width: 768px){
+    #infoPicsGroup{
+        display: none;
+    }
+
+    #recentOffers{
+        width: 50%; margin-left: auto; margin-right: auto;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+    }
+}
+  

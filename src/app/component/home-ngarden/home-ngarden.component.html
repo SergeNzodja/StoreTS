@@ -1,0 +1,55 @@
+<body>
+	<div class="container">
+		<div class="box">
+            <a href="#" (click)="showHomeDecor($event)"><h3>Home Decor</h3></a> 
+		</div>
+		<div class="box">
+			<h3 (click)="showVacuumCleaners()">Vacuum cleaners</h3>
+		</div>
+		<div class="box">
+			<h3 (click)="showFurniture()">Furniture</h3>
+		</div>
+		<div class="box">
+			<h3 (click)="showFans()">Fans and air conditioners</h3>
+		</div>
+		<div class="box">
+			<h3 (click)="showGrills()">Grills</h3>
+		</div>
+		<div class="box">
+			<h3 (click)="showGardeningNLawnCare()">Gardening and Lawn Care</h3>
+		</div>
+        <div class="box">
+			<h3 (click)="showOutdoorLiving()">Outdoor Living</h3>
+		</div>
+		<div class="box">
+			<h3 (click)="showSmartHome()">Smart Home</h3>
+		</div>
+	</div>
+</body>
+
+<div *ngIf="selectedSubMenu === 'homeNDecor'">
+    <app-home-decore></app-home-decore>
+  </div>
+  <div *ngIf="selectedSubMenu === 'fansNairConditionner'">
+    <app-fans-nair-conditioning></app-fans-nair-conditioning>
+  </div>
+  <div *ngIf="selectedSubMenu === 'smartHome'">
+    <app-smart-home></app-smart-home>
+  </div>
+  <div *ngIf="selectedSubMenu === 'vacuumCleaners'">
+    <app-vacuum-cleaners></app-vacuum-cleaners>
+  </div>
+  <div *ngIf="selectedSubMenu === 'furniture'">
+    <app-furniture></app-furniture>
+  </div>
+  <div *ngIf="selectedSubMenu === 'outdoorLiving'">
+    <app-outdoor-living></app-outdoor-living>
+  </div>
+  <div *ngIf="selectedSubMenu === 'grills'">
+    <app-grills></app-grills>
+  </div>
+  <div *ngIf="selectedSubMenu === 'gardeningNLawnCare'">
+    <app-garden-nlawn-care></app-garden-nlawn-care>
+  </div>
+
+
